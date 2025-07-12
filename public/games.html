@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game & Grub - Games Catalog</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=poppins:400,500,600,700|inter:400,500,600" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link href="./assets/app-GuAX7hIb.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        
+        .nav-link {
+            color: rgb(107 114 128);
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.15s ease-in-out;
+        }
+        .nav-link:hover {
+            color: rgb(17 24 39);
+        }
+        .nav-link.active {
+            color: rgb(147 51 234);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="h-full bg-gray-50">
+    <div id="app" class="min-h-full">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <!-- Logo -->
+                        <div class="flex-shrink-0 flex items-center">
+                            <a href="index.html" class="text-2xl font-bold text-purple-600">
+                                Game & Grub
+                            </a>
+                        </div>
+
+                        <!-- Navigation Links -->
+                        <div class="hidden md:ml-8 md:flex md:space-x-8">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="games.html" class="nav-link active">Games</a>
+                            <a href="menu.html" class="nav-link">Menu</a>
+                            <a href="events.html" class="nav-link">Events</a>
+                            <a href="about.html" class="nav-link">About</a>
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                            Book a Table
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="bg-purple-600 text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Game Library</h1>
+                    <p class="text-xl max-w-2xl mx-auto">
+                        Discover hundreds of board games, from classic favorites to the latest releases
+                    </p>
+                </div>
+            </section>
+
+            <!-- Games Grid -->
+            <section class="py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Available Games</h2>
+                        <p class="text-gray-600">Browse our extensive collection of board games</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <!-- Sample games -->
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-48 bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Catan</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-gray-900 mb-2">Settlers of Catan</h3>
+                                <p class="text-sm text-gray-600 mb-3">3-4 players • 60-90 min • Medium</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-purple-600 font-bold">$8/game</span>
+                                    <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Wingspan</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-gray-900 mb-2">Wingspan</h3>
+                                <p class="text-sm text-gray-600 mb-3">1-5 players • 40-70 min • Medium</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-purple-600 font-bold">$10/game</span>
+                                    <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-48 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Azul</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-gray-900 mb-2">Azul</h3>
+                                <p class="text-sm text-gray-600 mb-3">2-4 players • 30-45 min • Easy</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-purple-600 font-bold">$6/game</span>
+                                    <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Ticket to Ride</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-gray-900 mb-2">Ticket to Ride</h3>
+                                <p class="text-sm text-gray-600 mb-3">2-5 players • 30-60 min • Easy</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-purple-600 font-bold">$7/game</span>
+                                    <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-48 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Splendor</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-gray-900 mb-2">Splendor</h3>
+                                <p class="text-sm text-gray-600 mb-3">2-4 players • 30 min • Easy</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-purple-600 font-bold">$5/game</span>
+                                    <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-48 bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">7 Wonders</span>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold text-gray-900 mb-2">7 Wonders</h3>
+                                <p class="text-sm text-gray-600 mb-3">2-7 players • 30 min • Medium</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-purple-600 font-bold">$8/game</span>
+                                    <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="col-span-1 md:col-span-2">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-4">Game & Grub</h3>
+                        <p class="text-gray-300 mb-4">
+                            The perfect combination of board games and delicious food. Come for the games, stay for the grub!
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="games.html" class="text-gray-300 hover:text-white">Browse Games</a></li>
+                            <li><a href="menu.html" class="text-gray-300 hover:text-white">View Menu</a></li>
+                            <li><a href="events.html" class="text-gray-300 hover:text-white">Upcoming Events</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Book a Table</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>📍 123 Game Street, Fun City, FC 12345</li>
+                            <li>📞 (555) 123-GAME</li>
+                            <li>📧 hello@gameandgrub.com</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
+                    <p>&copy; 2024 Game & Grub. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/app-DNxiirP_.js"></script>
+</body>
+</html>
