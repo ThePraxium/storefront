@@ -1,51 +1,45 @@
 # Game & Grub
 
-A modern Laravel-based web application for **Game & Grub**, a hybrid board-game store and food arcade.
+A modern static website for **Game & Grub**, a hybrid board-game store and food arcade.
 
 ## Project Overview
 
-Game & Grub combines the best of "Dave & Buster's" and a local game shop, offering customers the ability to:
-- Browse and purchase board games
-- View and pre-order food from our arcade menu
-- Reserve game tables for groups
-- Book events and participate in gaming leagues
+Game & Grub combines the best of "Dave & Buster's" and a local game shop, showcasing:
+- Board game catalog and information
+- Food and drinks menu
+- Event listings and information
+- Contact and location details
 
 ## Tech Stack
 
-- **Framework**: Laravel 11 (PHP 8.3)
-- **Frontend**: Blade templates with Tailwind CSS
-- **Authentication**: Laravel Breeze
-- **Database**: SQLite (development) / MySQL (production)
-- **Payments**: Stripe integration
-- **Testing**: PHPUnit + Pest
+- **Frontend**: Static HTML with Tailwind CSS
+- **Build Tool**: Vite for asset compilation
+- **Deployment**: GitHub Pages
+- **Styling**: Tailwind CSS with custom components
 
 ## Features
 
-### Core Pages
-1. **Home/Landing** - Hero banner with rotating images and CTAs
-2. **Game Catalog** - Filterable game inventory with rental/purchase options
-3. **Food & Drinks Menu** - Categorized menu with pre-order functionality
-4. **Table Reservations** - Calendar-based booking system
-5. **Events & Promotions** - Gaming leagues and special events
-6. **Admin Dashboard** - CRUD operations and analytics
+### Static Pages
+1. **Home/Landing** - Hero banner with featured games and menu items
+2. **Game Catalog** - Showcase of popular board games
+3. **Food & Drinks Menu** - Categorized menu with images and prices
+4. **Events** - Gaming events and special occasions
+5. **About** - Information about Game & Grub
+6. **Contact** - Location and contact information
 
-### User Features
-- User registration and authentication
-- Game browsing with filters (genre, player count, age, difficulty)
-- Food menu with allergen information
-- Table booking with game and food bundling
-- Event RSVP and ticket purchasing
+### Design Features
+- Responsive design optimized for all devices
+- Modern UI with Tailwind CSS
+- Interactive navigation
+- Attractive game and menu showcases
 
-### Admin Features
-- Game inventory management
-- Menu item management
-- Booking administration
-- Event management
-- Sales analytics
+## Installation & Development
 
-## Installation
+### Prerequisites
+- Node.js (version 20 or later)
+- npm
 
-### For Development (Laravel)
+### Setup
 
 1. Clone the repository:
 ```bash
@@ -55,58 +49,61 @@ cd storefront
 
 2. Install dependencies:
 ```bash
-composer install
 npm install
 ```
 
-3. Set up environment:
-```bash
-cp .env.example .env
-php artisan key:generate
-touch database/database.sqlite
-```
-
-4. Run migrations and seeders:
-```bash
-php artisan migrate
-php artisan db:seed
-```
-
-5. Build assets:
+3. Build assets for development:
 ```bash
 npm run build
 ```
 
-6. Start the development server:
+4. Start a local development server:
 ```bash
-php artisan serve
+# Using Python (if available)
+cd public && python3 -m http.server 8000
+
+# Or using Node.js http-server (install globally first)
+npx http-server public -p 8000
 ```
 
-### For GitHub Pages (Static Site)
+The site will be available at `http://localhost:8000`
 
-The repository is configured to automatically deploy to GitHub Pages using GitHub Actions. The static version of the site includes:
+### Development Workflow
 
-- Pre-built HTML pages for all main sections
-- Compiled CSS and JavaScript assets
-- Responsive design with Tailwind CSS
-- Sample content showcasing the Game & Grub concept
+- Edit HTML files directly in the `public/` directory
+- Modify styles in `resources/css/` and JavaScript in `resources/js/`
+- Run `npm run build` to compile assets after making changes
+- Use `npm run dev` for development with hot reload
 
-**Live Site:** The static version is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+## Deployment
 
-## Development Timeline
+The repository is configured to automatically deploy to GitHub Pages using GitHub Actions. The static site is automatically deployed when changes are pushed to the main branch.
 
-- **Week 1**: Laravel skeleton, auth scaffolding, base layout ✅
-- **Week 2**: Game & Menu models, migrations, CRUD in dashboard
-- **Week 3**: Public catalog + menu pages, Tailwind styling
-- **Week 4**: Booking flow (tables, cart, Stripe checkout)
-- **Week 5**: Events module, basic analytics, polish & testing
-- **Week 6**: Deployment pipeline, QA, hand-off
+**Live Site:** https://thepraxium.github.io/storefront/
 
-## Testing
+The deployment process:
+1. Installs Node.js dependencies
+2. Builds CSS and JavaScript assets with Vite
+3. Copies all public files to the deployment directory
+4. Deploys to GitHub Pages
 
-Run the test suite:
-```bash
-php artisan test
+## File Structure
+
+```
+storefront/
+├── public/                 # Static HTML files and assets
+│   ├── index.html         # Homepage
+│   ├── games.html         # Games catalog
+│   ├── menu.html          # Food & drinks menu
+│   ├── events.html        # Events listing
+│   ├── about.html         # About page
+│   ├── contact.html       # Contact information
+│   └── assets/            # Built CSS and JS files
+├── resources/             # Source files for building
+│   ├── css/              # Tailwind CSS source
+│   └── js/               # JavaScript source
+├── .github/workflows/     # GitHub Actions for deployment
+└── package.json          # Node.js dependencies and scripts
 ```
 
 ## License

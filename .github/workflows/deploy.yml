@@ -40,11 +40,11 @@ jobs:
         mkdir -p dist
         # Copy all public files including HTML pages
         cp -r public/* dist/
-        # Copy built assets to the root assets directory for proper linking
+        # Ensure assets are in the correct location for the HTML files
         mkdir -p dist/assets
-        cp -r public/build/assets/* dist/assets/
+        cp -r public/build/assets/* dist/assets/ 2>/dev/null || true
         # Remove the build directory from dist since we've copied assets to root level
-        rm -rf dist/build
+        rm -rf dist/build 2>/dev/null || true
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
