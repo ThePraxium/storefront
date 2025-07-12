@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game & Grub - Welcome to Game & Grub</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=poppins:400,500,600,700|inter:400,500,600" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link href="./assets/app-GuAX7hIb.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        
+        .nav-link {
+            color: rgb(107 114 128);
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.15s ease-in-out;
+        }
+        .nav-link:hover {
+            color: rgb(17 24 39);
+        }
+        .nav-link.active {
+            color: rgb(147 51 234);
+            font-weight: 600;
+        }
+        .mobile-nav-link {
+            color: rgb(107 114 128);
+            display: block;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.15s ease-in-out;
+        }
+        .mobile-nav-link:hover {
+            color: rgb(17 24 39);
+        }
+        .mobile-nav-link.active {
+            color: rgb(147 51 234);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="h-full bg-gray-50">
+    <div id="app" class="min-h-full">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <!-- Logo -->
+                        <div class="flex-shrink-0 flex items-center">
+                            <a href="index.html" class="text-2xl font-bold text-purple-600">
+                                Game & Grub
+                            </a>
+                        </div>
+
+                        <!-- Navigation Links -->
+                        <div class="hidden md:ml-8 md:flex md:space-x-8">
+                            <a href="index.html" class="nav-link active">
+                                Home
+                            </a>
+                            <a href="games.html" class="nav-link">
+                                Games
+                            </a>
+                            <a href="menu.html" class="nav-link">
+                                Menu
+                            </a>
+                            <a href="events.html" class="nav-link">
+                                Events
+                            </a>
+                            <a href="about.html" class="nav-link">
+                                About
+                            </a>
+                            <a href="contact.html" class="nav-link">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="flex items-center space-x-4">
+                        <!-- Book a Table Button -->
+                        <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                            Book a Table
+                        </a>
+
+                        <!-- Mobile menu button -->
+                        <div class="md:hidden">
+                            <button type="button" class="mobile-menu-button text-gray-500 hover:text-gray-600">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="mobile-menu hidden md:hidden">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
+                        <a href="index.html" class="mobile-nav-link active">Home</a>
+                        <a href="games.html" class="mobile-nav-link">Games</a>
+                        <a href="menu.html" class="mobile-nav-link">Menu</a>
+                        <a href="events.html" class="mobile-nav-link">Events</a>
+                        <a href="about.html" class="mobile-nav-link">About</a>
+                        <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                            Welcome to Game & Grub
+                        </h1>
+                        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                            Where board games meet delicious food! Enjoy hours of gaming with friends while savoring our amazing menu.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="games.html" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                                Browse Games
+                            </a>
+                            <a href="menu.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                                View Menu
+                            </a>
+                            <a href="#" class="bg-purple-800 hover:bg-purple-900 px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                                Book a Table
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Games Section -->
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Featured Games
+                        </h2>
+                        <p class="text-xl text-gray-600">
+                            Discover our most popular board games perfect for your next gaming session
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Sample Game 1 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-48 bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Catan</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Settlers of Catan</h3>
+                                <p class="text-gray-600 mb-4">Build settlements and roads to create the most successful colony on the island of Catan...</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-sm text-gray-500">3-4 players</span>
+                                    <span class="text-sm text-gray-500">Medium</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm">
+                                        <span class="text-gray-900 font-semibold">$8</span>
+                                        <span class="text-gray-500">/game</span>
+                                    </div>
+                                    <a href="games.html" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                                        View Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample Game 2 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Wingspan</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Wingspan</h3>
+                                <p class="text-gray-600 mb-4">Attract birds to your wildlife preserves in this beautiful strategy game...</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-sm text-gray-500">1-5 players</span>
+                                    <span class="text-sm text-gray-500">Medium</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm">
+                                        <span class="text-gray-900 font-semibold">$10</span>
+                                        <span class="text-gray-500">/game</span>
+                                    </div>
+                                    <a href="games.html" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                                        View Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample Game 3 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-48 bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center">
+                                <span class="text-white text-lg font-semibold">Azul</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Azul</h3>
+                                <p class="text-gray-600 mb-4">Create beautiful tile patterns in this award-winning abstract strategy game...</p>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-sm text-gray-500">2-4 players</span>
+                                    <span class="text-sm text-gray-500">Easy</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm">
+                                        <span class="text-gray-900 font-semibold">$6</span>
+                                        <span class="text-gray-500">/game</span>
+                                    </div>
+                                    <a href="games.html" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                                        View Details
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <a href="games.html" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                            View All Games
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Menu Items Section -->
+            <section class="py-16 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Tasty Treats
+                        </h2>
+                        <p class="text-xl text-gray-600">
+                            Fuel your gaming sessions with our delicious food and drinks
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Sample Menu Item 1 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                                <span class="text-white text-4xl">🍕</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Margherita Pizza</h3>
+                                <p class="text-gray-600 text-sm mb-4">Fresh mozzarella, tomato sauce, and basil on our homemade crust</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-lg font-bold text-purple-600">$16</span>
+                                    <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Pizza</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample Menu Item 2 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                                <span class="text-white text-4xl">🍔</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Game Master Burger</h3>
+                                <p class="text-gray-600 text-sm mb-4">Juicy beef patty with cheese, lettuce, tomato, and our special sauce</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-lg font-bold text-purple-600">$14</span>
+                                    <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Burger</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample Menu Item 3 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                                <span class="text-white text-4xl">🍺</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Craft Beer Selection</h3>
+                                <p class="text-gray-600 text-sm mb-4">Local and imported craft beers to pair with your gaming session</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-lg font-bold text-purple-600">$6</span>
+                                    <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Drinks</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sample Menu Item 4 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                                <span class="text-white text-4xl">🧇</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Victory Waffles</h3>
+                                <p class="text-gray-600 text-sm mb-4">Crispy waffles with syrup and berries - perfect for celebrating wins!</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-lg font-bold text-purple-600">$10</span>
+                                    <span class="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">Dessert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <a href="menu.html" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                            View Full Menu
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Events Section -->
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Upcoming Events
+                        </h2>
+                        <p class="text-xl text-gray-600">
+                            Join us for exciting gaming events, tournaments, and special occasions
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Sample Event 1 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-32 bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center">
+                                <span class="text-white text-2xl">🎲</span>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-lg font-semibold text-gray-900">Board Game Tournament</h3>
+                                    <span class="text-xs text-teal-600 bg-teal-100 px-2 py-1 rounded">Tournament</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-4">Weekly tournament featuring different games. Win prizes and glory!</p>
+                                <div class="text-sm text-gray-500 mb-4">
+                                    <div>📅 Every Saturday</div>
+                                    <div>🕒 2:00 PM - 6:00 PM</div>
+                                    <div>💰 $10 entry fee</div>
+                                </div>
+                                <a href="events.html" class="block w-full text-center bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Sample Event 2 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-32 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                                <span class="text-white text-2xl">👨‍👩‍👧‍👦</span>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-lg font-semibold text-gray-900">Family Game Night</h3>
+                                    <span class="text-xs text-purple-600 bg-purple-100 px-2 py-1 rounded">Family</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-4">Bring the whole family for an evening of fun games suitable for all ages</p>
+                                <div class="text-sm text-gray-500 mb-4">
+                                    <div>📅 Every Tuesday</div>
+                                    <div>🕒 6:00 PM - 9:00 PM</div>
+                                    <div>💰 Free entry</div>
+                                </div>
+                                <a href="events.html" class="block w-full text-center bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Sample Event 3 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                            <div class="h-32 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                                <span class="text-white text-2xl">🍺</span>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-lg font-semibold text-gray-900">Beer & Board Games</h3>
+                                    <span class="text-xs text-green-600 bg-green-100 px-2 py-1 rounded">Social</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-4">Adults-only evening with craft beer specials and strategic games</p>
+                                <div class="text-sm text-gray-500 mb-4">
+                                    <div>📅 Every Friday</div>
+                                    <div>🕒 8:00 PM - 11:00 PM</div>
+                                    <div>💰 $5 cover</div>
+                                </div>
+                                <a href="events.html" class="block w-full text-center bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <a href="events.html" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-colors">
+                            View All Events
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="py-16 bg-purple-600 text-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Ready to Play?
+                    </h2>
+                    <p class="text-xl mb-8 max-w-3xl mx-auto">
+                        Book your table now and experience the perfect combination of gaming and great food. 
+                        Whether you're planning a date night, family outing, or gathering with friends, we've got you covered!
+                    </p>
+                    <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-black px-12 py-4 rounded-lg font-bold text-xl transition-colors">
+                        Book Your Table Now
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="col-span-1 md:col-span-2">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-4">Game & Grub</h3>
+                        <p class="text-gray-300 mb-4">
+                            The perfect combination of board games and delicious food. Come for the games, stay for the grub!
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white">
+                                <span class="sr-only">Facebook</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white">
+                                <span class="sr-only">Instagram</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.621 5.367 11.988 11.988 11.988s11.987-5.367 11.987-11.988C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.97 3.708 13.819 3.708 12.522s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="games.html" class="text-gray-300 hover:text-white">Browse Games</a></li>
+                            <li><a href="menu.html" class="text-gray-300 hover:text-white">View Menu</a></li>
+                            <li><a href="events.html" class="text-gray-300 hover:text-white">Upcoming Events</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white">Book a Table</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>📍 123 Game Street, Fun City, FC 12345</li>
+                            <li>📞 (555) 123-GAME</li>
+                            <li>📧 hello@gameandgrub.com</li>
+                            <li>🕒 Mon-Thu: 11AM-11PM<br>Fri-Sat: 11AM-1AM<br>Sun: 12PM-10PM</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
+                    <p>&copy; 2024 Game & Grub. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/app-DNxiirP_.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

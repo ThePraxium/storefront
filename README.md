@@ -45,6 +45,8 @@ Game & Grub combines the best of "Dave & Buster's" and a local game shop, offeri
 
 ## Installation
 
+### For Development (Laravel)
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/ThePraxium/storefront.git
@@ -79,6 +81,17 @@ npm run build
 ```bash
 php artisan serve
 ```
+
+### For GitHub Pages (Static Site)
+
+The repository is configured to automatically deploy to GitHub Pages using GitHub Actions. The static version of the site includes:
+
+- Pre-built HTML pages for all main sections
+- Compiled CSS and JavaScript assets
+- Responsive design with Tailwind CSS
+- Sample content showcasing the Game & Grub concept
+
+**Live Site:** The static version is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
 ## Development Timeline
 
