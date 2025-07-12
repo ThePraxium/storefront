@@ -19,5 +19,13 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        // Seed Game & Grub specific data
+        $this->call([
+            GameSeeder::class,
+            MenuItemSeeder::class,
+            TableSeeder::class,
+            EventSeeder::class,
+        ]);
     }
 }
